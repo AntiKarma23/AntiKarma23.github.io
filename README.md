@@ -1,89 +1,113 @@
-![Astro Sphere Lighthouse Score](_astrosphere.jpg)
+Aquí tienes la traducción del fichero al español:
 
-Astro Sphere is a static, minimalist, lightweight, lightning fast portfolio and blog theme based on my personal website.
+---
 
-It is primarily Astro, Tailwind and Typescript, with a very small amount of SolidJS for stateful components.
+## Puntuación de Lighthouse de Astro Sphere
 
-## 🚀 Deploy your own
+Astro Sphere es un tema estático, minimalista, ligero y extremadamente rápido para portafolios y blogs, basado en mi sitio web personal.
 
-[![Deploy with Vercel](_deploy_vercel.svg)](https://vercel.com/new/clone?repository-url=https://github.com/markhorn-dev/astro-sphere)  [![Deploy with Netlify](_deploy_netlify.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/markhorn-dev/astro-sphere)
+Está construido principalmente con Astro, Tailwind y TypeScript, con una pequeña cantidad de SolidJS para componentes con estado.
 
-## 📋 Features
+---
 
-- ✅ 100/100 Lighthouse performance
-- ✅ Responsive
-- ✅ Accessible
-- ✅ SEO-friendly
-- ✅ Typesafe
-- ✅ Minimal style
-- ✅ Light/Dark Theme
-- ✅ Animated UI
-- ✅ Tailwind styling
-- ✅ Auto generated sitemap
-- ✅ Auto generated RSS Feed
-- ✅ Markdown support
-- ✅ MDX Support (components in your markdown)
-- ✅ Searchable content (posts and projects)
-- ✅ Code Blocks - copy to clipboard
+## 🚀 Despliega tu propio sitio
 
-## 💯 Lighthouse score
+[![Desplegar con Vercel](_deploy_vercel.svg)](https://vercel.com/new/clone?repository-url=https://github.com/markhorn-dev/astro-sphere)  [![Desplegar con Netlify](_deploy_netlify.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/markhorn-dev/astro-sphere)
+
+---
+
+## 📋 Características
+
+- ✅ Rendimiento 100/100 en Lighthouse
+- ✅ Diseño responsive
+- ✅ Accesible
+- ✅ Optimizado para SEO
+- ✅ Tipado seguro
+- ✅ Estilo minimalista
+- ✅ Tema claro/oscuro
+- ✅ Interfaz de usuario animada
+- ✅ Estilizado con Tailwind
+- ✅ Generación automática de mapa del sitio
+- ✅ Generación automática de feeds RSS
+- ✅ Soporte para Markdown
+- ✅ Soporte para MDX (componentes en tu markdown)
+- ✅ Contenido con búsqueda (entradas y proyectos)
+- ✅ Bloques de código con opción de copiar al portapapeles
+
+---
+
+## 💯 Puntuación en Lighthouse
 ![Astro Sphere Lighthouse Score](_lighthouse.png)
 
-## 🕊️ Lightweight
-All pages under 100kb (including fonts)
+---
 
-## ⚡︎ Fast
-Rendered in ~40ms on localhost
+## 🕊️ Ligero
+Todas las páginas pesan menos de 100kb (incluyendo fuentes).
 
-## 📄 Configuration
+---
 
-The blog posts on the demo serve as the documentation and configuration.
+## ⚡︎ Rápido
+Renderizado en ~40ms en localhost.
 
-## 💻 Commands
+---
 
-All commands are run from the root of the project, from a terminal:
+## 📄 Configuración
 
-Replace npm with your package manager of choice. `npm`, `pnpm`, `yarn`, `bun`, etc
+Las publicaciones del blog en la demo sirven como documentación y guía de configuración.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run dev:network`     | Starts dev server on local network               |
-| `npm run sync`            | Generates TypeScript types for all Astro modules.|
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run preview:network` | Starts preview server on local network           |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-| `npm run lint`            | Run ESLint                                       |
-| `npm run lint:fix`        | Auto-fix ESLint issues                           |
+---
 
-## 🗺️ Roadmap
+## 💻 Comandos
 
-A few features I plan to implement
-- ⬜ Article Pages - Table of Contents
-- ⬜ Article Pages - Share on social media
+Todos los comandos se ejecutan desde la raíz del proyecto, en una terminal:
 
-## ✨ Acknowledgement
+Reemplaza `npm` por tu gestor de paquetes preferido: `npm`, `pnpm`, `yarn`, `bun`, etc.
 
-Theme inspired by [Paco Coursey](https://paco.me/), [Lee Robinson](https://leerob.io/) and [Hayden Bleasel](https://www.haydenbleasel.com/)
+| Comando                   | Acción                                             |
+| :------------------------ | :------------------------------------------------ |
+| `npm install`             | Instala las dependencias                          |
+| `npm run dev`             | Inicia el servidor de desarrollo en `localhost:4321` |
+| `npm run dev:network`     | Inicia el servidor de desarrollo en la red local  |
+| `npm run sync`            | Genera tipos de TypeScript para todos los módulos de Astro |
+| `npm run build`           | Construye tu sitio de producción en `./dist/`     |
+| `npm run preview`         | Previsualiza tu sitio localmente antes de desplegar |
+| `npm run preview:network` | Inicia el servidor de previsualización en la red local |
+| `npm run astro ...`       | Ejecuta comandos CLI como `astro add`, `astro check` |
+| `npm run astro -- --help` | Obtén ayuda para usar la CLI de Astro             |
+| `npm run lint`            | Ejecuta ESLint                                    |
+| `npm run lint:fix`        | Corrige automáticamente problemas con ESLint      |
 
+---
 
-## 🏛️ License
+## 🗺️ Hoja de ruta
+
+Algunas características que planeo implementar:
+- ⬜ Páginas de artículos - Tabla de contenidos
+- ⬜ Páginas de artículos - Compartir en redes sociales
+
+---
+
+## ✨ Agradecimientos
+
+El tema está inspirado por [Paco Coursey](https://paco.me/), [Lee Robinson](https://leerob.io/) y [Hayden Bleasel](https://www.haydenbleasel.com/).
+
+---
+
+## 🏛️ Licencia
 
 MIT
 
+---
 
-# 1.0.1 Update
+## Actualización 1.0.1
 
-Added ability to run dev and preview on local network.
-added npm run dev:network
-added npm run preview:network
+- Agregada la capacidad de ejecutar los comandos de desarrollo y previsualización en la red local.
+  - Añadido: `npm run dev:network`
+  - Añadido: `npm run preview:network`
+- Incrementada ligeramente la densidad de partículas en los modos claro y oscuro.
+- Añadidas animaciones sutiles de estrellas y meteoros en modo oscuro.
+- Eliminada la configuración de ESLint. 
 
-Added slightly more particle density in both light and dark mode.
+---
 
-Added subtle dark mode star and meteor animations.
-
-Removed eslint config
-
+Si necesitas otra traducción o ajustes, ¡avísame! 😊
