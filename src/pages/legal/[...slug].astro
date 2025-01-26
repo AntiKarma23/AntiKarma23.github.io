@@ -18,7 +18,7 @@ export async function getStaticPaths() {
 // Get the requested legal doc
 type Props = CollectionEntry<"legal">;
 const doc = Astro.props
-const { title, date } = doc.data
+const { titulo, fecha } = doc.data
 const { Content } = await doc.render();
 
 ---
