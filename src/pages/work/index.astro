@@ -7,7 +7,8 @@ import { WORK } from "@consts"
 
 const collection = await getCollection("work")
 
-collection.sort((a, b) => new Date(b.data.dateStart).getTime() - new Date(a.data.dateStart).getTime())
+// Ordenar las entradas por la fecha de inicio (fechaComienzo)
+collection.sort((a, b) => new Date(b.data.fechaComienzo).getTime() - new Date(a.data.fechaComienzo).getTime())
 
 const work = await Promise.all(
   collection.map(async (item) => {
@@ -16,10 +17,11 @@ const work = await Promise.all(
   })
 )
 
+// Función para formatear las fechas
 function formatWorkDate(input: Date | string) {
   if (typeof input === "string") return input
 
-  const month = input.toLocaleDateString("en-US", {
+  const month = input.toLocaleDateString("es-ES", {
     month: "short",
   })
 
@@ -27,6 +29,7 @@ function formatWorkDate(input: Date | string) {
   return `${month} ${year}`
 }
 ---
+
 <PageLayout title="Formación" description="Mi formación académica y cursos realizados.">
   <TopLayout>
     <div class="animate page-heading">
@@ -34,23 +37,22 @@ function formatWorkDate(input: Date | string) {
     </div>
   </TopLayout>
 
-
   <BottomLayout>
     <ul>
       { 
         work.map((entry) => (
           <li class="animate border-b border-black/10 dark:border-white/25 mt-4 py-8 first-of-type:mt-0 first-of-type:pt-0 last-of-type:border-none">
             <div class="text-sm uppercase mb-4">
-              {formatWorkDate(entry.data.dateStart)} - {formatWorkDate(entry.data.dateEnd)}
+              {formatWorkDate(entry.data.fechaComienzo)} - {formatWorkDate(entry.data.fechaFinal)}
             </div>
             <div class="text-black dark:text-white font-semibold">
-              {entry.data.company}
+              {entry.data.institucion} {/* Cambié "company" a "institucion" */}
             </div>
             <div class="text-sm font-semibold">
-              {entry.data.role}
+              {entry.data.titulo} {/* Cambié "role" a "titulo" */}
             </div>
             <article class="prose dark:prose-invert">
-              <entry.Content />
+              <entry.Content /> {/* El contenido se mantiene igual */}
             </article>
           </li>
         ))
