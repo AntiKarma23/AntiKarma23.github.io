@@ -6,10 +6,12 @@ import BottomLayout from "@layouts/BottomLayout.astro"
 import Projects from "@components/Projects"
 import { PROJECTS } from "@consts"
 
+// Obtener los proyectos y ordenar por fecha
 const projects = (await getCollection("projects"))
   .filter(project => !project.data.draft)
-  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .sort((a, b) => b.data.fecha.getTime() - a.data.fecha.getTime()) // Cambié "date" por "fecha"
 
+// Obtener las etiquetas únicas y ordenarlas alfabéticamente
 const tags = [...new Set(projects.flatMap(project => project.data.tags))]
   .sort((a, b) => a.localeCompare(b))
 ---
