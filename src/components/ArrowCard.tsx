@@ -17,18 +17,18 @@ export default function ArrowCard({entry, pill}: Props) {
             </div>
           }
           <div class="text-sm uppercase">
-            {formatDate(entry.data.date)}
+            {formatDate(entry.data.fecha)} {/* Cambié "date" a "fecha" */}
           </div>
         </div>
         <div class="font-semibold mt-3 text-black dark:text-white">
-          {entry.data.title}
+          {entry.data.titulo} {/* Cambié "title" a "titulo" */}
         </div>
 
         <div class="text-sm line-clamp-2">
-          {entry.data.summary}
+          {entry.data.resumen} {/* Cambié "summary" a "resumen" */}
         </div>
         <ul class="flex flex-wrap mt-2 gap-1">
-          {entry.data.tags.map((tag:string) => ( // this line has an error; Parameter 'tag' implicitly has an 'any' type.ts(7006)
+          {entry.data.tags.map((tag: string) => ( /* Agregué tipo explícito a 'tag' */
             <li class="text-xs uppercase py-0.5 px-1 rounded bg-black/5 dark:bg-white/20 text-black/75 dark:text-white/75">
               {tag}
             </li>
