@@ -7,7 +7,6 @@ import { WORK } from "@consts"
 
 const collection = await getCollection("work")
 
-// Ordenar las entradas por la fecha de inicio (fechaComienzo)
 collection.sort((a, b) => new Date(b.data.fechaComienzo).getTime() - new Date(a.data.fechaComienzo).getTime())
 
 const work = await Promise.all(
@@ -17,11 +16,10 @@ const work = await Promise.all(
   })
 )
 
-// Función para formatear las fechas
 function formatWorkDate(input: Date | string) {
   if (typeof input === "string") return input
 
-  const month = input.toLocaleDateString("es-ES", {
+  const month = input.toLocaleDateString("en-US", {
     month: "short",
   })
 
@@ -52,7 +50,7 @@ function formatWorkDate(input: Date | string) {
               {entry.data.titulo} {/* Cambié "role" a "titulo" */}
             </div>
             <article class="prose dark:prose-invert">
-              <entry.Content /> {/* El contenido se mantiene igual */}
+              <entry.Content />
             </article>
           </li>
         ))
