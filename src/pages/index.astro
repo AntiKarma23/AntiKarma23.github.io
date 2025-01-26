@@ -9,12 +9,12 @@ import MeteorShower from "@components/MeteorShower.astro"
 
 const posts = (await getCollection("blog"))
   .filter(post => !post.data.draft)
-  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .sort((a, b) => b.data.fecha.getTime() - a.data.fecha.getTime()) // Cambié 'date' por 'fecha'
   .slice(0,3)
 
 const projects = (await getCollection("projects"))
-  .filter(project => !project.data.draft)
-  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+   .filter(project => !project.data.draft)
+  .sort((a, b) => b.data.fecha.getTime() - a.data.fecha.getTime()) // Cambié 'date' por 'fecha'
   .slice(0,3)
 
 const stack = [
