@@ -15,6 +15,7 @@ export async function getStaticPaths() {
 	}))
 }
 
+
 // Get the requested legal doc
 type Props = CollectionEntry<"legal">;
 const doc = Astro.props
@@ -23,14 +24,14 @@ const { Content } = await doc.render();
 
 ---
 
-<PageLayout title={title} description={`${title} for ${SITE.TITLE}`}>
+<PageLayout title={titulo} description={`${titulo} for ${SITE.TITLE}`}>
   <TopLayout>
     <div class="animate">
       <div class="page-heading">
         {title}
       </div>
       <p class="font-normal opacity-75">
-        Last updated: {formatDate(date)}
+        Last updated: {formatDate(fecha)}
       </p>
     </div>
   </TopLayout>
