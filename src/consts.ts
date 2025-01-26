@@ -3,9 +3,7 @@ import type { Site, Page, Links, Socials } from "@types"
 // Global
 export const SITE: Site = {
   TITLE: "Portfolio: Oscar Racero aka TechDevAI",
-  DESCRIPTION: "Bienvenido al portfolio y blog de Oscar Racero, estudiante desarrollador de aplicaciones web y ciberseguridad. Aquí podrás encontrar la experiencia educativa, profesional, proyectos realizados y articulos escritos en diferentes web y redes sociales sobre desarrollo, tecnología, IA y ciberseguridad principalmente.
-    Welcome to the portfolio and blog of Oscar Racero, web application and cybersecurity developer student. Here you can find educational and professional experience, projects carried out and articles written on different websites and social networks mainly about development, technology, AI and cybersecurity.
-    ",
+  DESCRIPTION: "Bienvenido al portfolio y blog de Oscar Racero, estudiante desarrollador de aplicaciones web y ciberseguridad. Aquí podrás encontrar la experiencia educativa, profesional, proyectos realizados y articulos escritos en diferentes web y redes sociales sobre desarrollo, tecnología, IA y ciberseguridad principalmente. Welcome to the portfolio and blog of Oscar Racero, web application and cybersecurity developer student. Here you can find educational and professional experience, projects carried out and articles written on different websites and social networks mainly about development, technology, AI and cybersecurity.",
   AUTHOR: "Oscar Racero",
 }
 
